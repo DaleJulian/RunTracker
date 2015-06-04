@@ -1,0 +1,26 @@
+package com.example.runtracker;
+
+import java.util.Date;
+
+public class Run {
+
+	private Date mStartDate;
+	
+	public Run(){
+		mStartDate = new Date();
+	}
+	
+	public Date getStartDate(){
+		return mStartDate;
+	}
+	
+	public void setStartDate(Date startDate){
+		mStartDate = startDate;
+	}
+	
+	public int getDurationSeconds(long endMillis){
+		return(int)((endMillis - mStartDate.getTime()) / 1000);
+	}
+	
+	
+}

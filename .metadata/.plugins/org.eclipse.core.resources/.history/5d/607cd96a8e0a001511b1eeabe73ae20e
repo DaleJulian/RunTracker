@@ -1,0 +1,29 @@
+package com.example.runtracker;
+
+import android.content.Context;
+import android.location.LocationManager;
+
+public class RunManager {
+	
+	public static final String TAG = "RunManager";
+	
+	public static final String ACTION_LOCATION = "com.example.runtracker.ACTION_LOCATION";
+	
+	private static RunManager sRunManager;
+	private Context mAppContext;
+	private LocationManager mLocationManager;
+	
+	//the private constructor forces users to use RunManager.get(Context)
+	private RunManager(Context appContext){
+		mAppContext = appContext;
+		mLocationManager = (LocationManager)mAppContext.getSystemService(Context.LOCATION_SERVICE);
+	}
+	
+	public static RunManager get(Context c){
+		if(sRunManager == null){
+			//use the application context to avoid leaking activities
+			sRunManager = new RunManager(c.getApplicationContext());
+		}
+	}
+
+}
