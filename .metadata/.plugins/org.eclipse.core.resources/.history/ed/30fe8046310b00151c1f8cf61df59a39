@@ -1,0 +1,37 @@
+package com.example.runtracker;
+
+import com.example.runtracker.RunDatabaseHelper.RunCursor;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.ListFragment;
+import android.support.v4.widget.CursorAdapter;
+
+public class RunListFragment extends ListFragment {
+
+	private RunCursor mRunCursor;
+	
+	@Override 
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		mRunCursor = RunManager.get(getActivity()).queryRuns();
+		
+		//create an adapter to point at this cursor
+	
+	}
+	
+	@Override
+	public void onDestroy(){
+		super.onDestroy();
+	}
+	
+	private static class RunCursorAdapter extends CursorAdapter{
+		
+		private RunCursor mRunCursor;
+		
+		public RunCursorAdapter(Context c, RunCursor cursor){
+			super(c, cursor, 0);
+		}
+	}
+}

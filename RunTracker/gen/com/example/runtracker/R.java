@@ -1945,6 +1945,7 @@ containing a value of this type.
         public static final int image=0x7f090028;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f09002a;
+        public static final int menu_item_new_run=0x7f090058;
         public static final int middle=0x7f090022;
         public static final int multiply=0x7f090014;
         public static final int never=0x7f09001c;
@@ -2058,6 +2059,7 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int run=0x7f0c0000;
+        public static final int run_list_options=0x7f0c0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -2129,6 +2131,7 @@ containing a value of this type.
         public static final int hello_world=0x7f0a0012;
         public static final int latitude=0x7f0a0015;
         public static final int longitude=0x7f0a0016;
+        public static final int new_run=0x7f0a001e;
         public static final int start=0x7f0a0019;
         public static final int started=0x7f0a0014;
         public static final int stop=0x7f0a001a;

@@ -1,0 +1,31 @@
+package com.example.runtracker;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class RunDatabaseHelper extends SQLiteOpenHelper {
+
+	private static final String DB_NAME = "runs.sqlite";
+	private static final int VERSION = 1;
+	
+	private static final String TABLE_RUN = "run";
+	private static final String COLUMN_RUN_START_DATE = "start_date";
+	
+	public RunDatabaseHelper(Context context){
+		super(context, DB_NAME, null, VERSION);
+	}
+	
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
