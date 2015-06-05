@@ -144,8 +144,17 @@ public class RunDatabaseHelper extends SQLiteOpenHelper {
 			loc.setAltitude(getDouble(getColumnIndex(COLUMN_LOCATION_ALTITUDE)));
 			loc.setTime(getLong(getColumnIndex(COLUMN_LOCATION_TIMESTAMP)));
 			return loc;
-			}
-
-		
+		}
+	}
+	
+	public LocationCursor queryLocationsForRun(long runId){
+		Cursor wrapped = getReadableDatabase().query(TABLE_LOCATION,
+				null,
+				COLUMN_LOCATION_RUN_ID + " =?",
+				new String[]{String.valueOf(runId)},
+				null,
+				null,
+				COLUMN_LOCATION_TIMESTAMP + " ASC");
+		return new LocationCursor(wrapped);
 	}
 }

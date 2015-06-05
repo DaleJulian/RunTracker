@@ -1,5 +1,7 @@
 package com.example.runtracker;
 
+import com.google.android.gms.maps.GoogleMap;
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +11,7 @@ import android.util.Log;
 
 public class LocationReceiver extends BroadcastReceiver{
 	
+
 	private static final String TAG = "LocationReceiver";
 
 	@Override

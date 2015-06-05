@@ -1,0 +1,15 @@
+package com.example.runtracker;
+
+import android.content.Context;
+
+public class LocationListCursorLoader extends SQLiteCursorLoader {
+
+	private long mRunId;
+	
+	public LocationListCursorLoader(Context context, long runId) {
+		super(context);
+		mRun = runId;
+	}
+	
+
+}

@@ -1917,7 +1917,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f09003d;
         public static final int action_mode_bar_stub=0x7f09003c;
         public static final int action_mode_close_button=0x7f090025;
-        public static final int action_settings=0x7f090057;
+        public static final int action_settings=0x7f090058;
         public static final int activity_chooser_view_content=0x7f090026;
         public static final int alertTitle=0x7f090030;
         public static final int always=0x7f090019;
@@ -1945,7 +1945,7 @@ containing a value of this type.
         public static final int image=0x7f090028;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f09002a;
-        public static final int menu_item_new_run=0x7f090058;
+        public static final int menu_item_new_run=0x7f090059;
         public static final int middle=0x7f090022;
         public static final int multiply=0x7f090014;
         public static final int never=0x7f09001c;
@@ -1959,6 +1959,7 @@ containing a value of this type.
         public static final int run_durationTextView=0x7f090054;
         public static final int run_latitudeTextView=0x7f090051;
         public static final int run_longitudeTextView=0x7f090052;
+        public static final int run_mapButton=0x7f090057;
         public static final int run_startButton=0x7f090055;
         public static final int run_startedTextView=0x7f090050;
         public static final int run_stopButton=0x7f090056;
@@ -2131,7 +2132,12 @@ containing a value of this type.
         public static final int hello_world=0x7f0a0012;
         public static final int latitude=0x7f0a0015;
         public static final int longitude=0x7f0a0016;
+        public static final int map=0x7f0a001f;
         public static final int new_run=0x7f0a001e;
+        public static final int run_finish=0x7f0a0022;
+        public static final int run_finished_at_format=0x7f0a0023;
+        public static final int run_start=0x7f0a0020;
+        public static final int run_started_at_format=0x7f0a0021;
         public static final int start=0x7f0a0019;
         public static final int started=0x7f0a0014;
         public static final int stop=0x7f0a001a;

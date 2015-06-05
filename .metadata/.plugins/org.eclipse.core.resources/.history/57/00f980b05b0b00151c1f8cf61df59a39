@@ -1,0 +1,24 @@
+package com.example.runtracker;
+
+import android.os.Bundle;
+
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.SupportMapFragment;
+
+public class RunMapFragment extends SupportMapFragment {
+
+	
+	private static final String ARG_RUN_ID = "RUN_ID";
+	
+	private GoogleMap googleMap;
+	
+	public static RunMapFragment newInstance(long runId){
+		Bundle args = new Bundle();
+		args.putLong(ARG_RUN_ID, runId);
+		RunMapFragment rf = new RunMapFragment();
+		rf.setArguments(args);
+		return rf;
+	}
+	
+	
+}

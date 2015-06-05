@@ -1,0 +1,13 @@
+package com.example.runtracker;
+
+import android.content.Context;
+
+public class LocationListCursorLoader extends SQLiteCursorLoader {
+
+	public LocationListCursorLoader(Context context) {
+		super(context);
+		
+	}
+	
+
+}
