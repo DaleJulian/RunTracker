@@ -1,0 +1,14 @@
+package com.example.runtracker;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.support.v4.content.AsyncTaskLoader;
+
+public class DataLoader extends AsyncTaskLoader<Cursor> {
+
+	public DataLoader(Context context) {
+		super(context);
+	}
+
+	
+}

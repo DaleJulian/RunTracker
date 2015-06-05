@@ -1,0 +1,19 @@
+package com.example.runtracker;
+
+import android.content.Context;
+import android.support.v4.content.AsyncTaskLoader;
+
+public abstract class SQLiteCursorLoader extends AsyncTaskLoader<Cursor> {
+
+	public SQLiteCursorLoader(Context context) {
+		super(context);
+		
+	}
+
+	@Override
+	public Cursor loadInBackground() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.example.runtracker;
+
+import android.content.Context;
+
+public class RunLoader extends DataLoader<Run> {
+
+	public RunLoader(Context context) {
+		super(context);
+	}
+
+}
